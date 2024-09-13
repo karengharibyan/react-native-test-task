@@ -5,5 +5,5 @@ import {styles} from './styles';
 interface ITestMain {}
 
 export const TestMain: FC<ITestMain> = memo(({}) => {
-  return <View style={styles.root}></View>;
+  return <View style={styles.root} />;
 });

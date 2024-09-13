@@ -40,6 +40,7 @@ export const ProductItemBase: FC<IProductItemProps> = memo(
         await database.get<BasketItem>('basket_items').create(item => {
           // @ts-expect-error there is a type error in the watermelondb types
           item.product.set(product);
+          item.price = product.price;
           item.quantity = 1;
         });
       });
@@ -89,6 +90,7 @@ export const ProductItemBase: FC<IProductItemProps> = memo(
             <Button
               bgColor="rgba(1, 55, 59, .8)"
               size="xs"
+              isDisabled={basket?.[0]?.quantity === 0}
               onPress={onRemoveFromBasket}>
               <ButtonIcon as={RemoveIcon} w="$4" h="$4" color="$white" />
             </Button>
@@ -96,6 +98,7 @@ export const ProductItemBase: FC<IProductItemProps> = memo(
             <Button
               bgColor="rgba(1, 55, 59, .8)"
               size="xs"
+              isDisabled={basket?.[0]?.quantity === product.stock}
               onPress={onAddToBasket}>
               <ButtonIcon as={AddIcon} w="$4" h="$4" color="$white" />
             </Button>

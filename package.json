@@ -33,6 +33,7 @@
     "react-native-screens": "^3.34.0",
     "react-native-super-grid": "^6.0.1",
     "react-native-svg": "13.4.0",
+    "rxjs": "^7.8.1",
     "zod": "^3.23.8"
   },
   "devDependencies": {

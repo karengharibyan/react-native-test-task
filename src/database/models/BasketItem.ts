@@ -5,6 +5,7 @@ import {Product} from './Product';
 export class BasketItem extends Model {
   static table = 'basket_items';
 
+  @field('price') price!: number;
   @field('quantity') quantity!: number;
   @relation('products', 'product_id') product!: Product;
 }

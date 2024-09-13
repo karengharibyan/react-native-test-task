@@ -11,8 +11,8 @@ import {
 
 interface IAppContext {
   tags: Tag[];
-  selectedTag?: number;
-  setSelectedTag: Dispatch<React.SetStateAction<number | undefined>>;
+  selectedTag?: string;
+  setSelectedTag: Dispatch<React.SetStateAction<string | undefined>>;
 }
 
 export const AppContext = createContext<IAppContext>({
@@ -26,15 +26,15 @@ interface AppContextProvideProps {
 }
 
 export const AppContextProvider: FC<AppContextProvideProps> = ({children}) => {
-  const {tags,syncronizeTags} = useGetTagsApi();
+  const {tags, syncronizeTags} = useGetTagsApi();
   const {products, syncronizeProducts} = useGetProductsApi();
-  const [selectedTag, setSelectedTag] = useState<number | undefined>(undefined);
+  const [selectedTag, setSelectedTag] = useState<string | undefined>(undefined);
 
   useEffect(() => {
     if (products && tags) {
       syncronizeProducts();
     }
-  }, [products,tags]);
+  }, [products, tags]);
 
   useEffect(() => {
     if (tags) {

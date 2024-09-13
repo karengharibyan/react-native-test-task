@@ -7,7 +7,7 @@ import {FC, useCallback} from 'react';
 import {ProductItem, TagsCarousel} from '@components';
 import {FlatGrid} from 'react-native-super-grid';
 import {withDatabase, withObservables} from '@nozbe/watermelondb/react';
-import {Database} from '@nozbe/watermelondb';
+import {Database, Q} from '@nozbe/watermelondb';
 import {Product} from '@src/database/models';
 
 interface IGroceryMainProps extends GroceryStackParamProps<GROCERY_STACK.MAIN> {
@@ -42,7 +42,14 @@ export const GroceryMainBase: FC<IGroceryMainProps> = ({
   );
 };
 
-const enhance = withObservables(['database'], ({database}) => {
+const enhance = withObservables(['database', 'route'], ({database, route}) => {
+  if (route?.params?.selectedTag) {
+    return {
+      products: (database as Database)
+        .get<Product>('products').query(Q.on('product_tags', 'tag_id', route?.params?.selectedTag))
+        .observe(),
+    };
+  }
   return {
     products: (database as Database).get<Product>('products').query().observe(),
   };

@@ -11108,6 +11108,7 @@ __metadata:
     react-native-super-grid: ^6.0.1
     react-native-svg: 13.4.0
     react-test-renderer: 18.3.1
+    rxjs: ^7.8.1
     typescript: 5.0.4
     zod: ^3.23.8
   languageName: unknown
@@ -11430,7 +11431,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rxjs@npm:^7.8.0":
+"rxjs@npm:^7.8.0, rxjs@npm:^7.8.1":
   version: 7.8.1
   resolution: "rxjs@npm:7.8.1"
   dependencies:

@@ -1,11 +1,21 @@
 import {BottomTabHeaderProps} from '@react-navigation/bottom-tabs';
 import {NativeStackHeaderProps} from '@react-navigation/native-stack';
 import React, {FC, useCallback, useMemo} from 'react';
-import { TouchableOpacity, View, ViewStyle} from 'react-native';
+import {TouchableOpacity, View, ViewStyle} from 'react-native';
 import {styles} from './styles';
-import {ChevronLeftIcon, CloseIcon, Icon, Text} from '@gluestack-ui/themed';
+import {
+  Badge,
+  BadgeText,
+  ChevronLeftIcon,
+  CloseIcon,
+  Icon,
+  Text,
+} from '@gluestack-ui/themed';
 import {BasketIcon} from '@src/assets/icons';
 import {MAIN_STACK} from '@src/enums';
+import {withDatabase, withObservables} from '@nozbe/watermelondb/react';
+import {BasketItem} from '@src/database/models';
+import {Database} from '@nozbe/watermelondb';
 
 interface Props {
   labelName?: string;
@@ -16,9 +26,10 @@ interface Props {
   right?: React.ReactNode;
   headerLeft?: React.ReactNode;
   marginTop?: number;
+  basketItems: BasketItem[];
 }
 
-export const Header: FC<
+export const HeaderBase: FC<
   (NativeStackHeaderProps | BottomTabHeaderProps) & Props
 > = ({
   navigation,
@@ -26,6 +37,7 @@ export const Header: FC<
   containerStyles,
   paddingBottom = vp(12),
   marginTop = 0,
+  basketItems,
 }) => {
   const goBack = useCallback(() => {
     navigation.canGoBack() && navigation.goBack();
@@ -39,16 +51,34 @@ export const Header: FC<
     if (options?.title === MAIN_STACK.BASKET) {
       return (
         <TouchableOpacity style={styles.backBtn} onPress={goBack}>
-          <Icon as={CloseIcon} w="$8" h="$8" color="#fff"/>
+          <Icon as={CloseIcon} w="$8" h="$8" color="#fff" />
         </TouchableOpacity>
       );
     }
+    const basketItemsCount = basketItems?.reduce(
+      (acc, item) => acc + item.quantity,
+      0,
+    );
     return (
       <TouchableOpacity style={styles.backBtn} onPress={onBasketPress}>
+        {basketItemsCount ? (
+          <Badge
+            // h={22}
+            // w={22}
+            bg="$red600"
+            borderRadius="$full"
+            mb={-15}
+            mr={-5}
+            zIndex={1}
+            variant="solid"
+            alignSelf="flex-end">
+            <BadgeText color="$white">{basketItemsCount}</BadgeText>
+          </Badge>
+        ) : null}
         <Icon as={BasketIcon} w="$8" h="$8" color="#fff" />
       </TouchableOpacity>
     );
-  }, [options.title]);
+  }, [options.title, basketItems]);
 
   const left = useMemo(() => {
     if (options?.title === MAIN_STACK.BASKET) {
@@ -65,19 +95,28 @@ export const Header: FC<
 
   return (
     <View style={styles.container}>
-        <View
-          style={[
-            styles.root,
-            {
-              marginTop: marginTop,
-              paddingBottom: paddingBottom,
-            },
-            containerStyles,
-          ]}>
-          <View style={styles.lefContainer}>{left}</View>
-          {options?.title && <Text style={styles.title}>{options.title}</Text>}
-          <View>{right}</View>
-        </View>
+      <View
+        style={[
+          styles.root,
+          {
+            marginTop: marginTop,
+            paddingBottom: paddingBottom,
+          },
+          containerStyles,
+        ]}>
+        <View style={styles.lefContainer}>{left}</View>
+        {options?.title && <Text style={styles.title}>{options.title}</Text>}
+        <View>{right}</View>
+      </View>
     </View>
   );
 };
+
+const enhance = withObservables(['database'], ({database}) => ({
+  basketItems: (database as Database).collections
+    .get<BasketItem>('basket_items')
+    .query()
+    .observeWithColumns(['quantity']),
+}));
+
+export const Header = withDatabase(enhance(HeaderBase));

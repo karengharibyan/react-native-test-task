@@ -7,13 +7,14 @@ import {
   readonly,
 } from '@nozbe/watermelondb/decorators';
 import {sanitizeJsonData} from '../sanitizers';
+import { Tag } from './Tag';
 
 //@ts-expect-error there is a type error in the watermelondb types
 export class Product extends Model {
   static table = 'products';
 
   static associations = {
-    tags: {type: 'has_many', foreignKey: 'product_id'},
+    product_tags: {type: 'has_many', foreignKey: 'product_id'},
   };
 
   @field('title') title!: string;
@@ -29,7 +30,7 @@ export class Product extends Model {
 
   @lazy
   tags = this.collections
-    .get('tags')
+    .get<Tag>('tags')
     .query(Q.on('product_tags', 'product_id', this.id));
 
   // Optional readonly fields

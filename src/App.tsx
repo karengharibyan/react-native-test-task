@@ -5,7 +5,7 @@
  * @format
  */
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import {AppNavigation} from './navigation';
 import {GluestackUIProvider} from '@gluestack-ui/themed';
 import {config} from '@gluestack-ui/config';
@@ -15,16 +15,12 @@ import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {AppContextProvider} from '@context';
 import {DatabaseProvider} from '@nozbe/watermelondb/react';
 import {database} from './database';
-import * as RNFS from 'react-native-fs';
 
 export const queryClient = new QueryClient();
 
-console.log(RNFS.DocumentDirectoryPath);
-
 function App(): React.JSX.Element {
-
   return (
-    <GestureHandlerRootView style={{flex: 1}}>
+    <GestureHandlerRootView>
       <DatabaseProvider database={database}>
         <QueryClientProvider client={queryClient}>
           <AppContextProvider>
