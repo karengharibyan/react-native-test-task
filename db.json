@@ -1,0 +1,564 @@
+{
+  "tags": [
+    {
+      "id": 1,
+      "name": "fruits"
+    },
+    {
+      "id": 2,
+      "name": "meat"
+    },
+    {
+      "id": 3,
+      "name": "pet supplies"
+    },
+    {
+      "id": 4,
+      "name": "cat food"
+    },
+    {
+      "id": 5,
+      "name": "cooking essentials"
+    },
+    {
+      "id": 6,
+      "name": "vegetables"
+    },
+    {
+      "id": 7,
+      "name": "dog food"
+    },
+    {
+      "id": 8,
+      "name": "dairy"
+    },
+    {
+      "id": 9,
+      "name": "seafood"
+    },
+    {
+      "id": 10,
+      "name": "condiments"
+    },
+    {
+      "id": 11,
+      "name": "desserts"
+    },
+    {
+      "id": 12,
+      "name": "beverages"
+    },
+    {
+      "id": 13,
+      "name": "coffee"
+    },
+    {
+      "id": 14,
+      "name": "health supplements"
+    },
+    {
+      "id": 15,
+      "name": "grains"
+    },
+    {
+      "id": 16,
+      "name": "household essentials"
+    }
+  ],
+  "products": [
+    {
+      "id": "16",
+      "title": "Apple",
+      "description": "Fresh and crisp apples, perfect for snacking or incorporating into various recipes.",
+      "discountPercentage": 1.97,
+      "stock": 9,
+      "rating": 2.96,
+      "price": 1.99,
+      "tag": [
+        "fruits"
+      ],
+      "sku": "QTROUV79",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Apple/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Apple/thumbnail.png"
+    },
+    {
+      "id": "17",
+      "title": "Beef Steak",
+      "description": "High-quality beef steak, great for grilling or cooking to your preferred level of doneness.",
+      "discountPercentage": 17.99,
+      "stock": 96,
+      "rating": 2.83,
+      "price": 12.99,
+      "tag": [
+        "meat"
+      ],
+      "sku": "BWWA2MSO",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Beef%20Steak/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Beef%20Steak/thumbnail.png"
+    },
+    {
+      "id": "18",
+      "title": "Cat Food",
+      "description": "Nutritious cat food formulated to meet the dietary needs of your feline friend.",
+      "discountPercentage": 9.57,
+      "stock": 13,
+      "rating": 2.88,
+      "price": 8.99,
+      "tag": [
+        "pet supplies",
+        "cat food"
+      ],
+      "sku": "C3F8QN6O",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Cat%20Food/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Cat%20Food/thumbnail.png"
+    },
+    {
+      "id": "19",
+      "title": "Chicken Meat",
+      "description": "Fresh and tender chicken meat, suitable for various culinary preparations.",
+      "discountPercentage": 10.46,
+      "stock": 69,
+      "rating": 4.61,
+      "price": 9.99,
+      "tag": [
+        "meat"
+      ],
+      "sku": "G5YEHW7B",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Chicken%20Meat/1.png",
+        "https://cdn.dummyjson.com/products/images/groceries/Chicken%20Meat/2.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Chicken%20Meat/thumbnail.png"
+    },
+    {
+      "id": "20",
+      "title": "Cooking Oil",
+      "description": "Versatile cooking oil suitable for frying, sautéing, and various culinary applications.",
+      "discountPercentage": 18.89,
+      "stock": 22,
+      "rating": 4.01,
+      "price": 4.99,
+      "tag": [
+        "cooking essentials"
+      ],
+      "sku": "Q6ZP1UY8",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Cooking%20Oil/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Cooking%20Oil/thumbnail.png"
+    },
+    {
+      "id": "21",
+      "title": "Cucumber",
+      "description": "Crisp and hydrating cucumbers, ideal for salads, snacks, or as a refreshing side.",
+      "discountPercentage": 11.44,
+      "stock": 22,
+      "rating": 4.71,
+      "price": 1.49,
+      "tag": [
+        "vegetables"
+      ],
+      "sku": "6KGF2K6Z",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Cucumber/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Cucumber/thumbnail.png"
+    },
+    {
+      "id": "22",
+      "title": "Dog Food",
+      "description": "Specially formulated dog food designed to provide essential nutrients for your canine companion.",
+      "discountPercentage": 18.15,
+      "stock": 40,
+      "rating": 2.74,
+      "price": 10.99,
+      "tag": [
+        "pet supplies",
+        "dog food"
+      ],
+      "sku": "A6QRCH37",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Dog%20Food/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Dog%20Food/thumbnail.png"
+    },
+    {
+      "id": "23",
+      "title": "Eggs",
+      "description": "Fresh eggs, a versatile ingredient for baking, cooking, or breakfast.",
+      "discountPercentage": 5.8,
+      "stock": 10,
+      "rating": 4.46,
+      "price": 2.99,
+      "tag": [
+        "dairy"
+      ],
+      "sku": "YA617RI7",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Eggs/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Eggs/thumbnail.png"
+    },
+    {
+      "id": "24",
+      "title": "Fish Steak",
+      "description": "Quality fish steak, suitable for grilling, baking, or pan-searing.",
+      "discountPercentage": 7,
+      "stock": 99,
+      "rating": 4.83,
+      "price": 14.99,
+      "tag": [
+        "seafood"
+      ],
+      "sku": "XNIH1MTA",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Fish%20Steak/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Fish%20Steak/thumbnail.png"
+    },
+    {
+      "id": "25",
+      "title": "Green Bell Pepper",
+      "description": "Fresh and vibrant green bell pepper, perfect for adding color and flavor to your dishes.",
+      "discountPercentage": 15.5,
+      "stock": 89,
+      "rating": 4.28,
+      "price": 1.29,
+      "tag": [
+        "vegetables"
+      ],
+      "sku": "HU7S7VQ0",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Green%20Bell%20Pepper/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Green%20Bell%20Pepper/thumbnail.png"
+    },
+    {
+      "id": "26",
+      "title": "Green Chili Pepper",
+      "description": "Spicy green chili pepper, ideal for adding heat to your favorite recipes.",
+      "discountPercentage": 18.51,
+      "stock": 8,
+      "rating": 4.43,
+      "price": 0.99,
+      "tag": [
+        "vegetables"
+      ],
+      "sku": "Y4RM3JCB",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Green%20Chili%20Pepper/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Green%20Chili%20Pepper/thumbnail.png"
+    },
+    {
+      "id": "27",
+      "title": "Honey Jar",
+      "description": "Pure and natural honey in a convenient jar, perfect for sweetening beverages or drizzling over food.",
+      "discountPercentage": 1.91,
+      "stock": 25,
+      "rating": 3.5,
+      "price": 6.99,
+      "tag": [
+        "condiments"
+      ],
+      "sku": "BTBNIIOU",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Honey%20Jar/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Honey%20Jar/thumbnail.png"
+    },
+    {
+      "id": "28",
+      "title": "Ice Cream",
+      "description": "Creamy and delicious ice cream, available in various flavors for a delightful treat.",
+      "discountPercentage": 7.58,
+      "stock": 76,
+      "rating": 3.77,
+      "price": 5.49,
+      "tag": [
+        "desserts"
+      ],
+      "sku": "VEZMU1EQ",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Ice%20Cream/1.png",
+        "https://cdn.dummyjson.com/products/images/groceries/Ice%20Cream/2.png",
+        "https://cdn.dummyjson.com/products/images/groceries/Ice%20Cream/3.png",
+        "https://cdn.dummyjson.com/products/images/groceries/Ice%20Cream/4.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Ice%20Cream/thumbnail.png"
+    },
+    {
+      "id": "29",
+      "title": "Juice",
+      "description": "Refreshing fruit juice, packed with vitamins and great for staying hydrated.",
+      "discountPercentage": 5.45,
+      "stock": 99,
+      "rating": 3.41,
+      "price": 3.99,
+      "tag": [
+        "beverages"
+      ],
+      "sku": "M2K19S06",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Juice/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Juice/thumbnail.png"
+    },
+    {
+      "id": "30",
+      "title": "Kiwi",
+      "description": "Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.",
+      "discountPercentage": 10.32,
+      "stock": 1,
+      "rating": 4.37,
+      "price": 2.49,
+      "tag": [
+        "fruits"
+      ],
+      "sku": "0X3NORB9",
+      "availabilityStatus": "Low Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Kiwi/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Kiwi/thumbnail.png"
+    },
+    {
+      "id": "31",
+      "title": "Lemon",
+      "description": "Zesty and tangy lemons, versatile for cooking, baking, or making refreshing beverages.",
+      "discountPercentage": 17.81,
+      "stock": 0,
+      "rating": 4.25,
+      "price": 0.79,
+      "tag": [
+        "fruits"
+      ],
+      "sku": "J074TE3H",
+      "availabilityStatus": "Out of Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Lemon/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Lemon/thumbnail.png"
+    },
+    {
+      "id": "32",
+      "title": "Milk",
+      "description": "Fresh and nutritious milk, a staple for various recipes and daily consumption.",
+      "discountPercentage": 15.09,
+      "stock": 57,
+      "rating": 3.14,
+      "price": 3.49,
+      "tag": [
+        "dairy"
+      ],
+      "sku": "VOZKMF40",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Milk/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Milk/thumbnail.png"
+    },
+    {
+      "id": "33",
+      "title": "Mulberry",
+      "description": "Sweet and juicy mulberries, perfect for snacking or adding to desserts and cereals.",
+      "discountPercentage": 16.35,
+      "stock": 79,
+      "rating": 3.19,
+      "price": 4.99,
+      "tag": [
+        "fruits"
+      ],
+      "sku": "0M1K7RRC",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Mulberry/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Mulberry/thumbnail.png"
+    },
+    {
+      "id": "34",
+      "title": "Nescafe Coffee",
+      "description": "Quality coffee from Nescafe, available in various blends for a rich and satisfying cup.",
+      "discountPercentage": 11.65,
+      "stock": 22,
+      "rating": 2.54,
+      "price": 7.99,
+      "tag": [
+        "beverages",
+        "coffee"
+      ],
+      "sku": "FP5H3065",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Nescafe%20Coffee/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Nescafe%20Coffee/thumbnail.png"
+    },
+    {
+      "id": "35",
+      "title": "Potatoes",
+      "description": "Versatile and starchy potatoes, great for roasting, mashing, or as a side dish.",
+      "discountPercentage": 4.05,
+      "stock": 8,
+      "rating": 3.82,
+      "price": 2.29,
+      "tag": [
+        "vegetables"
+      ],
+      "sku": "W4NOBW45",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Potatoes/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Potatoes/thumbnail.png"
+    },
+    {
+      "id": "36",
+      "title": "Protein Powder",
+      "description": "Nutrient-packed protein powder, ideal for supplementing your diet with essential proteins.",
+      "discountPercentage": 1.58,
+      "stock": 65,
+      "rating": 3.91,
+      "price": 19.99,
+      "tag": [
+        "health supplements"
+      ],
+      "sku": "BT2QOWKZ",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Protein%20Powder/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Protein%20Powder/thumbnail.png"
+    },
+    {
+      "id": "37",
+      "title": "Red Onions",
+      "description": "Flavorful and aromatic red onions, perfect for adding depth to your savory dishes.",
+      "discountPercentage": 17.89,
+      "stock": 86,
+      "rating": 4.08,
+      "price": 1.99,
+      "tag": [
+        "vegetables"
+      ],
+      "sku": "TAF870KJ",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Red%20Onions/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Red%20Onions/thumbnail.png"
+    },
+    {
+      "id": "38",
+      "title": "Rice",
+      "description": "High-quality rice, a staple for various cuisines and a versatile base for many dishes.",
+      "discountPercentage": 12.02,
+      "stock": 49,
+      "rating": 3.94,
+      "price": 5.99,
+      "tag": [
+        "grains"
+      ],
+      "sku": "905JXMXM",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Rice/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Rice/thumbnail.png"
+    },
+    {
+      "id": "39",
+      "title": "Soft Drinks",
+      "description": "Assorted soft drinks in various flavors, perfect for refreshing beverages.",
+      "discountPercentage": 1.88,
+      "stock": 78,
+      "rating": 4.59,
+      "price": 1.99,
+      "tag": [
+        "beverages"
+      ],
+      "sku": "I1ZNSLXJ",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Soft%20Drinks/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Soft%20Drinks/thumbnail.png"
+    },
+    {
+      "id": "40",
+      "title": "Strawberry",
+      "description": "Sweet and succulent strawberries, great for snacking, desserts, or blending into smoothies.",
+      "discountPercentage": 19.59,
+      "stock": 9,
+      "rating": 4.5,
+      "price": 3.99,
+      "tag": [
+        "fruits"
+      ],
+      "sku": "LPP7I4JZ",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Strawberry/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Strawberry/thumbnail.png"
+    },
+    {
+      "id": "41",
+      "title": "Tissue Paper Box",
+      "description": "Convenient tissue paper box for everyday use, providing soft and absorbent tissues.",
+      "discountPercentage": 15.44,
+      "stock": 97,
+      "rating": 4.55,
+      "price": 2.49,
+      "tag": [
+        "household essentials"
+      ],
+      "sku": "IQEZWXMJ",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Tissue%20Paper%20Box/1.png",
+        "https://cdn.dummyjson.com/products/images/groceries/Tissue%20Paper%20Box/2.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Tissue%20Paper%20Box/thumbnail.png"
+    },
+    {
+      "id": "42",
+      "title": "Water",
+      "description": "Pure and refreshing bottled water, essential for staying hydrated throughout the day.",
+      "discountPercentage": 13.71,
+      "stock": 95,
+      "rating": 2.93,
+      "price": 0.99,
+      "tag": [
+        "beverages"
+      ],
+      "sku": "LZG5PPHA",
+      "availabilityStatus": "In Stock",
+      "images": [
+        "https://cdn.dummyjson.com/products/images/groceries/Water/1.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Water/thumbnail.png"
+    }
+  ]
+}
