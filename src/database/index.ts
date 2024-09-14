@@ -3,6 +3,7 @@ import SQLiteAdapter from '@nozbe/watermelondb/adapters/sqlite';
 
 import {BasketItem, Product, ProductTag, Tag} from './models';
 import schema from './schema';
+import { Platform } from 'react-native';
 // import Post from './model/Post' // ⬅️ You'll import your Models here
 
 // First, create the adapter to the underlying database:
@@ -14,7 +15,7 @@ const adapter = new SQLiteAdapter({
   // dbName: 'ambulanceDB',
   // (recommended option, should work flawlessly out of the box on iOS. On Android,
   // additional installation steps have to be taken - disable if you run into issues...)
-  jsi: true /* Platform.OS === 'ios' */,
+  jsi: Platform.OS === 'ios',
   // (optional, but you should implement this method)
   onSetUpError: error => {
     console.log(error);

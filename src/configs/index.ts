@@ -1,4 +1,8 @@
-import {API_URL} from '@env';
+import Config from 'react-native-config';
+
+
+console.log('Config.API_URL', Config);
+
 export default {
-  API_URL: API_URL,
+  API_URL: Config.API_URL,
 };

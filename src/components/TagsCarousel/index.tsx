@@ -1,4 +1,4 @@
-import { FlatList, Text} from '@gluestack-ui/themed';
+import {FlatList, Text} from '@gluestack-ui/themed';
 import {FC, useCallback, useContext, useEffect} from 'react';
 import {ListRenderItem, TouchableOpacity, View} from 'react-native';
 import {styles} from './styles';
@@ -20,7 +20,7 @@ export const TagsCarouselBase: FC<ITagsCarouselProps> = ({tags}) => {
     //@ts-expect-error needed to fix
     navigation.setParams({selectedTag});
   }, [selectedTag]);
-  
+
   const renderTag = useCallback<ListRenderItem<Tag>>(
     ({item}) => {
       const color = selectedTag === item.id ? '$amber400' : '$blueGray500';
@@ -40,7 +40,9 @@ export const TagsCarouselBase: FC<ITagsCarouselProps> = ({tags}) => {
   );
   return (
     <View style={styles.root}>
-      <Text size="sm" mb="$1">Filter by Tag</Text>
+      <Text size="sm" mb="$1">
+        Filter by Tag
+      </Text>
       <FlatList
         horizontal
         data={tags}
