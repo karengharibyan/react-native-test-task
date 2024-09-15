@@ -13,16 +13,3 @@ export const addOrEditProductSchema = zod.object({
     ),
   description: zod.string(),
 });
-
-export const OTPSchema = zod.object({
-  phone: zod
-    .string({
-      required_error: 'Phone is required',
-    })
-    .min(1, 'Phone is required'),
-  pin: zod
-    .string({
-      required_error: 'OTP is required',
-    })
-    .min(4, 'OPT is required'),
-});
